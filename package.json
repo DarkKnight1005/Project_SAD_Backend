@@ -1,0 +1,18 @@
+{
+  "name": "project_sad_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayaz Panahov",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-jwt": "^6.1.0",
+    "express-swagger-generator": "^1.1.17",
+    "mongodb": "^4.2.0",
+    "mongoose": "^6.0.13"
+  }
+}
