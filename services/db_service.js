@@ -1,7 +1,8 @@
 const MongoClient = require('mongodb').MongoClient
-const urls = require("/Users/ayazpanahov/Desktop/Project_SAD_Backend/urls/db_urls.js");
 
-class Connection {
+const urls = require("../urls/db_urls.js");
+
+class DbConnection {
 
     static async open() {
         if (this.db) return this.db
@@ -11,13 +12,13 @@ class Connection {
 
 }
 
-Connection.db = null
-Connection.url = urls.db_url
-Connection.options = {
-    bufferMaxEntries:   0,
-    reconnectTries:     5000,
+DbConnection.db = null
+DbConnection.url = urls.db_url
+DbConnection.options = {
+    // bufferMaxEntries:   0,
+    // reconnectTries:     5000,
     useNewUrlParser:    true,
     // useUnifiedTopology: true,
 }
 
-module.exports = { Connection }
+module.exports = { DbConnection }
